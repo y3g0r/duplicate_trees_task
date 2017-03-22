@@ -103,25 +103,41 @@ optional arguments:
   -v, --verbose      print to stderr time required to serialize tree (tree
                      generation step excluded)
 
+```
+> *__Note__: delete --nohtml flag from commands bellow and copy-paste output*
+> *[here](http://cpettitt.github.io/project/dagre-d3/latest/demo/interactive-demo.html)*
+> *to visualize generated graphs, or install graphviz to vizualize graph locally*
+```
 $ python3 random_tree_demo.py 100 -v --nohtml | dot -Tpng -o rendered/example1.png
 0.001024007797241211
+```
+![example1.png](https://raw.githubusercontent.com/y3g0r/duplicate_trees_task/master/rendered/example1.png)
 
+```
 $ python3 random_tree_demo.py 20 -v --compvals --ent 3 --nohtml | dot -Tpng -o rendered/example2.png
 0.00048041343688964844
-
+```
+![example2.png](https://raw.githubusercontent.com/y3g0r/duplicate_trees_task/master/rendered/example2.png)
+```
 $ python3 random_tree_demo.py 20 -v --compvals --ent 2 --minh 2 --nohtml | dot -Tpng -o rendered/example3.png
 0.0003173351287841797
-
+```
+![example3.png](https://raw.githubusercontent.com/y3g0r/duplicate_trees_task/master/rendered/example3.png)
+```
 # flat tree
 $ python3 random_tree_demo.py 5 -v --compvals --ent 3 --minh 1 --maxh 1 --nohtml | dot -Tpng -o rendered/example4.png
 0.00017189979553222656
-
-
+```
+![example4.png](https://raw.githubusercontent.com/y3g0r/duplicate_trees_task/master/rendered/example4.png)
+```
 # bin tree
 $ python3 random_tree_demo.py 15 -v --compvals --ent 3 --minh 2 --maxb 2 --nohtml | dot -Tpng -o rendered/example5.png
 0.00027060508728027344
-
+```
+![example5.png](https://raw.githubusercontent.com/y3g0r/duplicate_trees_task/master/rendered/example5.png)
+```
 # linked list
 $ python3 random_tree_demo.py 5 -v --compvals --ent 3 --minh 2 --maxb 1 --nohtml | dot -Tpng -o rendered/example6.png
 0.0001900196075439453
 ```
+![example6.png](https://raw.githubusercontent.com/y3g0r/duplicate_trees_task/master/rendered/example6.png)
