@@ -20,6 +20,14 @@ class TreeNode:
     def data(self):
         return self._data
 
+    @property
+    def height(self):
+        heights = deque((0,))
+        for child in self._children:
+            heights.append(child.height)
+        return 1 + max(heights)
+
+
     def _node_type_check(self, node):
         if not issubclass(type(node), TreeNode):
             raise TypeError('Childs should be of type TreeNode')
@@ -171,19 +179,19 @@ def serialize(tree, compare_values=False, minheight=3):
     """)
 
     node_declaration_template = \
-        '\t{node.id} [label="{node.data} : {node.id}" style="fill: {node_color}"];'
+        '\t{node.id} [label="{node.data} : {node.id}" color="black" fillcolor="{node_color}" style="filled"];'
 
     node_relation_template = \
         '\t{edge.parent.id} -> {edge.child.id};'
 
-    dups = tree.duplicates(compare_values, minheight)
+    dups = tree.duplicates(compare_values=compare_values, minheight=minheight)
     color_of = defaultdict(lambda: '#ffffff')
     colors = {'#ffffff'}
     color = '#ffffff'
 
     for dup_set in dups:
         while color in colors:
-            rgb = [random.randint(182, 237) for _ in range(3)]
+            rgb = [random.randint(89, 209) for _ in range(3)]
             color = '#' + ''.join('{:02X}'.format(clr) for clr in rgb)
         colors.add(color)
         for node in dup_set:

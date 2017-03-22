@@ -1,4 +1,5 @@
 from tree import TreeNode, serialize
+import sys
 
 node_01 = TreeNode('A', 1)
 node_02 = TreeNode('X', 2)
@@ -67,4 +68,4 @@ node_19.add_child(node_32)
 node_19.add_child(node_33)
 root = node_01
 
-print(serialize(root))
+print(serialize(root, compare_values=bool(int(sys.argv[1])), minheight=int(sys.argv[2])))
