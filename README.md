@@ -1,7 +1,7 @@
 # duplicate_trees_task
 
-To visualize tree in demo
-go [here](http://cpettitt.github.io/project/dagre-d3/latest/demo/interactive-demo.html?graph=%2F*%20Example%20*%2F%0Adigraph%20%7B%0A%20%20%20%20%2F*%20Note%3A%20HTML%20labels%20do%20not%20work%20in%20IE%2C%20which%20lacks%20support%20for%20%3CforeignObject%3E%20tags.%20*%2F%0A%20%20%20%20node%20%5Brx%3D5%20ry%3D5%20labelStyle%3D%22font%3A%20300%2014px%20%27Helvetica%20Neue%27%2C%20Helvetica%22%5D%0A%20%20%20%20edge%20%5BlabelStyle%3D%22font%3A%20300%2014px%20%27Helvetica%20Neue%27%2C%20Helvetica%22%5D%0A%20%20%20%201%20%20%5Blabel%3D%22A%20%3A%201%20%22%5D%3B%0A%20%20%20%202%20%20%5Blabel%3D%22X%20%3A%202%20%22%5D%3B%0A%20%20%20%203%20%20%5Blabel%3D%22H%20%3A%203%20%22%5D%3B%0A%20%20%20%204%20%20%5Blabel%3D%22G%20%3A%204%20%22%20style%3D%22fill%3A%20%23ed7979%22%5D%3B%0A%20%20%20%205%20%20%5Blabel%3D%22E%20%3A%205%20%22%20style%3D%22fill%3A%20%23b7e0e8%22%5D%3B%0A%20%20%20%206%20%20%5Blabel%3D%22G%20%3A%206%20%22%20style%3D%22fill%3A%20%23ed7979%22%5D%3B%0A%20%20%20%207%20%20%5Blabel%3D%22E%20%3A%207%20%22%5D%3B%0A%20%20%20%208%20%20%5Blabel%3D%22H%20%3A%208%20%22%20style%3D%22fill%3A%20%23e9ed79%22%5D%3B%0A%20%20%20%209%20%20%5Blabel%3D%22A%20%3A%209%20%22%20style%3D%22fill%3A%20%23bba8a7%22%5D%3B%20%2F*leaf*%2F%0A%20%20%20%2010%20%5Blabel%3D%22B%20%3A%2010%22%20style%3D%22fill%3A%20%23bbb8b7%22%5D%3B%20%2F*leaf*%2F%0A%20%20%20%2011%20%5Blabel%3D%22C%20%3A%2011%22%20style%3D%22fill%3A%20%23bbc8c7%22%5D%3B%20%2F*leaf*%2F%0A%20%20%20%2012%20%5Blabel%3D%22H%20%3A%2012%22%20style%3D%22fill%3A%20%23e9ed79%22%5D%3B%0A%20%20%20%2013%20%5Blabel%3D%22A%20%3A%2013%22%20style%3D%22fill%3A%20%23bba8a7%22%5D%3B%20%2F*leaf*%2F%0A%20%20%20%2014%20%5Blabel%3D%22C%20%3A%2014%22%20style%3D%22fill%3A%20%23bbc8c7%22%5D%3B%20%2F*leaf*%2F%0A%20%20%20%2015%20%5Blabel%3D%22B%20%3A%2015%22%20style%3D%22fill%3A%20%23bbb8b7%22%5D%3B%20%2F*leaf*%2F%0A%20%20%20%2016%20%5Blabel%3D%22E%20%3A%2016%22%20style%3D%22fill%3A%20%23b7e0e8%22%5D%3B%0A%20%20%20%2017%20%5Blabel%3D%22E%20%3A%2017%22%20style%3D%22fill%3A%20%23e8b7e8%22%5D%3B%0A%20%20%20%2018%20%5Blabel%3D%22E%20%3A%2018%22%20style%3D%22fill%3A%20%23b7e0e8%22%5D%3B%0A%20%20%20%2019%20%5Blabel%3D%22E%20%3A%2019%22%20style%3D%22fill%3A%20%23e8b7e8%22%5D%3B%0A%20%20%20%2020%20%5Blabel%3D%22A%20%3A%2020%22%20style%3D%22fill%3A%20%23bba8a7%22%5D%3B%20%2F*leaf*%2F%0A%20%20%20%2021%20%5Blabel%3D%22B%20%3A%2021%22%20style%3D%22fill%3A%20%23bbb8b7%22%5D%3B%20%2F*leaf*%2F%0A%20%20%20%2022%20%5Blabel%3D%22C%20%3A%2022%22%20style%3D%22fill%3A%20%23bbc8c7%22%5D%3B%20%2F*leaf*%2F%0A%20%20%20%2023%20%5Blabel%3D%22A%20%3A%2023%22%20style%3D%22fill%3A%20%23bba8a7%22%5D%3B%20%2F*leaf*%2F%0A%20%20%20%2024%20%5Blabel%3D%22B%20%3A%2024%22%20style%3D%22fill%3A%20%23bbb8b7%22%5D%3B%20%2F*leaf*%2F%0A%20%20%20%2025%20%5Blabel%3D%22C%20%3A%2025%22%20style%3D%22fill%3A%20%23bbc8c7%22%5D%3B%20%2F*leaf*%2F%0A%20%20%20%2026%20%5Blabel%3D%22D%20%3A%2026%22%20style%3D%22fill%3A%20%23bbd8d7%22%5D%3B%20%2F*leaf*%2F%0A%20%20%20%2027%20%5Blabel%3D%22A%20%3A%2027%22%20style%3D%22fill%3A%20%23bba8a7%22%5D%3B%20%2F*leaf*%2F%0A%20%20%20%2028%20%5Blabel%3D%22B%20%3A%2028%22%20style%3D%22fill%3A%20%23bbb8b7%22%5D%3B%20%2F*leaf*%2F%0A%20%20%20%2029%20%5Blabel%3D%22C%20%3A%2029%22%20style%3D%22fill%3A%20%23bbc8c7%22%5D%3B%20%2F*leaf*%2F%0A%20%20%20%2030%20%5Blabel%3D%22A%20%3A%2030%22%20style%3D%22fill%3A%20%23bba8a7%22%5D%3B%20%2F*leaf*%2F%0A%20%20%20%2031%20%5Blabel%3D%22B%20%3A%2031%22%20style%3D%22fill%3A%20%23bbb8b7%22%5D%3B%20%2F*leaf*%2F%0A%20%20%20%2032%20%5Blabel%3D%22C%20%3A%2032%22%20style%3D%22fill%3A%20%23bbc8c7%22%5D%3B%20%2F*leaf*%2F%0A%20%20%20%2033%20%5Blabel%3D%22D%20%3A%2033%22%20style%3D%22fill%3A%20%23bbd8d7%22%5D%3B%20%2F*leaf*%2F%0A%20%20%20%201%20-%3E%202%3B%0A%20%20%20%201%20-%3E%203%3B%0A%20%20%20%201%20-%3E%204%3B%0A%20%20%20%203%20-%3E%205%3B%0A%20%20%20%203%20-%3E%206%3B%0A%20%20%20%203%20-%3E%207%3B%0A%20%20%20%204%20-%3E%208%3B%0A%20%20%20%205%20-%3E%209%3B%0A%20%20%20%205%20-%3E%2010%3B%0A%20%20%20%205%20-%3E%2011%3B%0A%20%20%20%206%20-%3E%2012%3B%0A%20%20%20%207%20-%3E%2013%3B%0A%20%20%20%207%20-%3E%2014%3B%0A%20%20%20%207%20-%3E%2015%3B%0A%20%20%20%208%20-%3E%2016%3B%0A%20%20%20%208%20-%3E%2017%3B%0A%20%20%20%2012%20-%3E%2018%3B%0A%20%20%20%2012%20-%3E%2019%3B%0A%20%20%20%2016%20-%3E%2020%3B%0A%20%20%20%2016%20-%3E%2021%3B%0A%20%20%20%2016%20-%3E%2022%3B%0A%20%20%20%2017%20-%3E%2023%3B%0A%20%20%20%2017%20-%3E%2024%3B%0A%20%20%20%2017%20-%3E%2025%3B%0A%20%20%20%2017%20-%3E%2026%3B%0A%20%20%20%2018%20-%3E%2027%3B%0A%20%20%20%2018%20-%3E%2028%3B%0A%20%20%20%2018%20-%3E%2029%3B%0A%20%20%20%2019%20-%3E%2030%3B%0A%20%20%20%2019%20-%3E%2031%3B%0A%20%20%20%2019%20-%3E%2032%3B%0A%20%20%20%2019%20-%3E%2033%3B%0A%7D%0A%0A)
+To visualize tree in demo_client.py
+go [here](http://cpettitt.github.io/project/dagre-d3/latest/demo/interactive-demo.html)
 
 OR copy-paste this:
 ```
@@ -77,3 +77,49 @@ digraph {
 }
 ```
 Nodes with the same color are duplicates.
+
+## Example invocations of random_tree_demo.py
+```
+$ python3 random_tree_demo.py 100 -h                      
+usage: random_tree_demo.py [-h] [-c] [--minh MINHEIGHT] [--maxh MAXHEIGHT]
+                           [--maxb MAXBREADTH] [--ent ENTROPY] [-v]
+                           N
+
+Demo tree generator
+
+positional arguments:
+  N                  number of nodes in generated tree
+
+optional arguments:
+  -h, --help         show this help message and exit
+  -c, --compvals     compare values while colorizing tree
+  --minh MINHEIGHT   min height of tree to be compared, default 1
+  --maxh MAXHEIGHT   max height for each node (except root), default N
+  --maxb MAXBREADTH  max number of childs for each node, default N
+  --ent ENTROPY      dataset size. Default dataset is ascii letters. If
+                     expected dataset size is bigger then ascii letters set
+                     then it is extended with D_{n} where n is int
+  -v, --verbose      print to stderr time required to serialize tree (tree
+                     generation step excluded)
+
+$ python3 random_tree_demo.py 100 -v | dot -Tps -o rendered/example1.ps
+0.001222848892211914
+
+$ python3 random_tree_demo.py 20 -v --compvals --ent 3 | dot -Tps -o rendered/example2.ps
+0.0003457069396972656
+
+$ python3 random_tree_demo.py 20 -v --compvals --ent 3 --minh 2 | dot -Tps -o rendered/example3.ps
+0.0002856254577636719
+
+# flat tree
+$ python3 random_tree_demo.py 5 -v --compvals --ent 3 --minh 1 --maxh 1 | dot -Tps -o rendered/example4.ps
+0.00023794174194335938
+
+# bin tree
+$ python3 random_tree_demo.py 15 -v --compvals --ent 3 --minh 2 --maxb 2 | dot -Tps -o rendered/example5.ps
+0.00038051605224609375
+
+# linked list
+$ python3 random_tree_demo.py 5 -v --compvals --ent 3 --minh 2 --maxb 1 | dot -Tps -o rendered/example6.ps 
+0.0001964569091796875
+```
