@@ -167,7 +167,7 @@ def print_tree(tree):
     pprint(_print_tree(tree))
 
 
-def serialize(tree, compare_values=False, minheight=3):
+def serialize(tree, compare_values=False, minheight=3, html=True):
     general_template = textwrap.dedent("""
     digraph {{
         node [rx=5 ry=5 labelStyle="font: 300 14px 'Helvetica Neue', Helvetica"]
@@ -178,8 +178,12 @@ def serialize(tree, compare_values=False, minheight=3):
     }}
     """)
 
-    node_declaration_template = \
-        '\t{node.id} [label="{node.data} : {node.id}" color="black" fillcolor="{node_color}" style="filled"];'
+    if html:
+        node_declaration_template = \
+            '\t{node.id} [label="{node.data} : {node.id}" style="fill: {node_color}"];'
+    else:
+        node_declaration_template = \
+            '\t{node.id} [label="{node.data} : {node.id}" color="black" fillcolor="{node_color}" style="filled"];'
 
     node_relation_template = \
         '\t{edge.parent.id} -> {edge.child.id};'

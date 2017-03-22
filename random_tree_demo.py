@@ -29,6 +29,9 @@ parser.add_argument('--ent', dest='entropy',
                     help="dataset size. Default dataset is ascii letters. "
                     "If expected dataset size is bigger then ascii letters set "
                     "then it is extended with D_{n} where n is int")
+parser.add_argument('--nohtml', dest='html',
+                    action='store_const', const=False, default=True,
+                    help="if provided generates graphviz compatible serialization")
 parser.add_argument('-v','--verbose', dest='verbose',
                     action='store_const', const=True, default=False,
                     help="print to stderr time required to serialize tree (tree generation step excluded)")
@@ -73,7 +76,8 @@ except IndexError:
           "generated {} nodes".format(i))
 
 start = time.time()
-output = serialize(root, compare_values=compare_values, minheight=minheight)
+output = serialize(root, compare_values=compare_values, minheight=minheight, html=args.html)
 end = time.time() - start
 print(output)
-print(end, file=sys.stderr)
+if args.verbose:
+    print(end, file=sys.stderr)
